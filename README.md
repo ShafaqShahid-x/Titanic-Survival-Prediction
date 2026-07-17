@@ -57,10 +57,10 @@ The following classification models were implemented:
 ## Model Performance
 
 | Model | Accuracy |
-|--------|----------|
-| Logistic Regression | 79% |
-| Decision Tree | 80% |
-| Random Forest | 80% |
+|------|---------|
+| Logistic Regression | **79%** |
+| Decision Tree | **80%** |
+| Random Forest | **80%** |
 
 ---
 
@@ -72,7 +72,7 @@ A new feature named **FamilySize** was created using:
 FamilySize = SibSp + Parch + 1
 ```
 
-This feature provides additional information about the number of family members traveling with each passenger.
+This feature provides additional information about the number of family members traveling together.
 
 ---
 
@@ -80,8 +80,44 @@ This feature provides additional information about the number of family members 
 
 - Female passengers had a higher survival rate than male passengers.
 - Passenger class was strongly associated with survival.
-- Sex was the most important feature in the tree-based models.
-- Decision Tree and Random Forest achieved the highest accuracy of 80%.
+- Sex was the most influential feature in the tree-based models.
+- Decision Tree and Random Forest achieved the highest accuracy of **80%**.
+
+---
+
+# Exploratory Data Analysis
+
+## Correlation Heatmap
+
+The heatmap below shows the correlation between the numerical features used in the dataset.
+
+![Correlation Heatmap](correlation_heatmap.png)
+
+---
+
+## Age Distribution
+
+The histogram below illustrates the distribution of passenger ages.
+
+![Age Distribution](age_distribution_histogram.png)
+
+---
+
+## Fare vs Passenger Class
+
+The box plot compares ticket fares across passenger classes and highlights the variation and outliers.
+
+![Fare vs Passenger Class](boxplot_of_fare_vs_Pclass.png)
+
+---
+
+# Model Interpretation
+
+## Random Forest Feature Importance
+
+The feature importance plot shows which features contributed the most to the Random Forest model.
+
+![Random Forest Feature Importance](random_forest_feature_importance.png)
 
 ---
 
@@ -103,7 +139,13 @@ This feature provides additional information about the number of family members 
 Titanic-Survival-Prediction/
 │
 ├── Titanic_Survival_Prediction.ipynb
-└── README.md
+├── requirements.txt
+├── .gitignore
+├── README.md
+├── correlation_heatmap.png
+├── age_distribution.png
+├── fare_vs_pclass_boxplot.png
+└── feature_importance.png
 ```
 
 ---
@@ -113,7 +155,7 @@ Titanic-Survival-Prediction/
 - Perform systematic hyperparameter tuning using GridSearchCV.
 - Evaluate models using cross-validation.
 - Explore additional feature engineering techniques.
-- Compare the performance of other machine learning algorithms.
+- Compare the performance of additional machine learning algorithms.
 
 ---
 
