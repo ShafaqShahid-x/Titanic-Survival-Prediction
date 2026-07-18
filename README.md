@@ -60,7 +60,7 @@ The following classification models were implemented:
 |------|---------|
 | Logistic Regression | **79%** |
 | Decision Tree | **80%** |
-| Random Forest | **80%** |
+| Random Forest | **77%** |
 
 ---
 
@@ -81,7 +81,7 @@ This feature provides additional information about the number of family members 
 - Female passengers had a higher survival rate than male passengers.
 - Passenger class was strongly associated with survival.
 - Sex was the most influential feature in the tree-based models.
-- Decision Tree and Random Forest achieved the highest accuracy of **80%**.
+- Decision Tree achieved **80%** and Random Forest achieved accuracy of **77%**.
 
 ---
 
@@ -117,7 +117,7 @@ The box plot compares ticket fares across passenger classes and highlights the v
 
 The feature importance plot shows which features contributed the most to the Random Forest model.
 
-![Random Forest Feature Importance](random_forest_feature_importance.png)
+![Random Forest Feature Importance](feature_importance.png)
 
 ---
 
